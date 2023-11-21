@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class UrlMethod {
+public class UrlReader {
     private static final String OUTPUT_TEXT_FILE_PATH = "/io-url/url.txt";
 
     public static void processUrl(String input) throws MalformedURLException {

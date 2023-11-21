@@ -12,7 +12,7 @@ public class UrlProgram {
         String input = sc.nextLine();
 
         try {
-            UrlMethod.processUrl(input);
+            UrlReader.processUrl(input);
         } catch (MalformedURLException e) {
             System.out.println("The URL is not correct");
         }
