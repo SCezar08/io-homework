@@ -16,5 +16,6 @@ public class UrlProgram {
         } catch (MalformedURLException e) {
             System.out.println("The URL is not correct");
         }
+        UrlReader.printPath();
     }
 }

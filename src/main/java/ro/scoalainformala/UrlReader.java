@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class UrlReader {
-    private static final String OUTPUT_TEXT_FILE_PATH = "/io-url/url.txt";
+    private static final File OUTPUT_TEXT_FILE_PATH = new File("/io-url/url.txt");
 
     public static void processUrl(String input) throws MalformedURLException {
         URL url1 = new URL(input);
@@ -25,5 +25,9 @@ public class UrlReader {
         } catch (IOException e1) {
             System.out.println("An error occured while reading or writing: " + e1.getMessage());
         }
+    }
+
+    public static void printPath() {
+        System.out.println("The path is: " + OUTPUT_TEXT_FILE_PATH.getAbsolutePath());
     }
 }
